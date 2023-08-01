@@ -7,15 +7,13 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
 		
-		int y = 0;
-		int x = 1;
+		String animais = "gato cachorro papagaio cavalo aranha baleia tigre";
+		String[] vetorAnimais = animais.split(" ");
 		
-		while(x > 0) {
-			System.out.println("Digite um número para somar ou 0 para finalizar: ");
-			x = scan.nextInt();
-			y = y + x;
+		for(int i = 0; i < vetorAnimais.length - 1; i++) {
+			System.out.println(vetorAnimais[i]);
 		};
-		System.out.println("Valor Total: " + y);
+		
 		scan.close();
 	}
 
